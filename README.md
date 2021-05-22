@@ -1,1 +1,2 @@
 # SCOME
+SCOME establishes the fundamental concepts to model a CS performance evaluation system. The evaluation system proposed in SCOME focuses on measuring the performance of a supply chain as a whole. However, due to the SC complexity, it is often necessary to measure the performance of specific SC components to determining the overall performance of the CS. For this reason, SCOME also represents elements for measuring the performance of entities such as establishments, machines, and people, as well as organizational units, processes, among others. 
