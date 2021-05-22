@@ -1,0 +1,1360 @@
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://www.w3.org/2002/07/owl#imports> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://purl.org/dc/elements/1.1/contributor> "Gabriela P. Henning" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://purl.org/dc/elements/1.1/contributor> "Horacio P. Leone" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://purl.org/dc/elements/1.1/contributor> "Marcela Vegetti" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://purl.org/dc/elements/1.1/creator> "Alicia C. Böhm" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://purl.org/dc/elements/1.1/licence> "CreativeCommons V4.0 https://creativecommons.org/licenses/by/4.0/legalcode" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://purl.org/dc/elements/1.1/title> "SCOME" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> <http://www.w3.org/2000/01/rdf-schema#comment> "Supply Chain Ontology Mesurement" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/licence
+<http://purl.org/dc/elements/1.1/licence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAllowedValues> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAllowedValues
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAllowedValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAllowedValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessableAttribute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessableAttribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessableAttribute> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessmentMethod
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessmentMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessmentMethod> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessmentMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLinkedConcept
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLinkedConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLinkedConcept> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLinkedConcept> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLinkedConcept> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPartMetric
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPartMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPartMetric> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPartOfMetric> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceDimension
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceDimension> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceDimensionOf> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceDimension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceEvaulationSystemOf> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isScaleTypeOf> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> <http://www.w3.org/2000/01/rdf-schema#label> "hasScaleType"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTarget
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTarget> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTarget> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUnitOfMeasure
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUnitOfMeasure> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isUnitOfMeasureOf> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUnitOfMeasure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> <http://www.w3.org/2000/01/rdf-schema#label> "hasValueScale"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPartOfMetric
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPartOfMetric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPartOfMetric> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPartOfMetric> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceDimensionOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceDimensionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceDimensionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceEvaulationSystemOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceEvaulationSystemOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isQuantifiedBy
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isQuantifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isQuantifiedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isQuantifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isScaleTypeOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isScaleTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isShownThrough
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isShownThrough> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isShownThrough> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isShownThrough> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isUnitOfMeasureOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isUnitOfMeasureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isUnitOfMeasureOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#hasResourceRole
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#hasResourceRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#definition
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#definition> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#definition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#description
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#dimensionalSize
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#dimensionalSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#dimensionalSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#dimensionalSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#dimensionalSize> <http://www.w3.org/2000/01/rdf-schema#label> "dimensionalSize"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasElementValue"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> <http://www.w3.org/2000/01/rdf-schema#label> "hasLowerBound"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasMeasuredValue
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasMeasuredValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasMeasuredValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasNormalizedValue
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasNormalizedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasNormalizedValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTargetvalue
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTargetvalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTargetvalue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTargetvalue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTargetvalue> <http://www.w3.org/2000/01/rdf-schema#label> "hasTargetValue"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame> <http://www.w3.org/2000/01/rdf-schema#label> "hasTimeFrame"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> <http://www.w3.org/2000/01/rdf-schema#label> "hasUpperBound"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue> <http://www.w3.org/2000/01/rdf-schema#label> "maxValue"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#minValue
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#minValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#minValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#minValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#modifierPrefix
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#modifierPrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#modifierPrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#modifierPrefix> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#modifierPrefix> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#normalizationCriteria
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#normalizationCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#normalizationCriteria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#normalizationCriteria> <http://www.w3.org/2000/01/rdf-schema#label> "normalizationCriteria"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFBegin
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFBegin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFBegin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFBegin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFEnd
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint> <http://www.w3.org/2000/01/rdf-schema#label> "timepoint"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Continuous" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Discrete" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Linguistic" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid38 <http://www.w3.org/2002/07/owl#complementOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid39 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue> .
+_:genid39 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid40 <http://www.w3.org/2002/07/owl#unionOf> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid33 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> .
+_:genid33 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid34 <http://www.w3.org/2002/07/owl#unionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid29 <http://www.w3.org/2002/07/owl#unionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid20 <http://www.w3.org/2002/07/owl#complementOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid22 <http://www.w3.org/2002/07/owl#unionOf> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid14 <http://www.w3.org/2002/07/owl#complementOf> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> .
+_:genid15 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid16 <http://www.w3.org/2002/07/owl#unionOf> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf> .
+_:genid43 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de valores aceptables para un determinado atributo mensurable" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Task> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Task> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad mediante la cual se valora un atributo mensurable\nasignándole un valor (“measure”) de acuerdo al\nprocedimiento especificado por una métrica" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid46 <http://www.w3.org/2002/07/owl#unionOf> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf> .
+_:genid49 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid58 <http://www.w3.org/2002/07/owl#unionOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAllowedValues> .
+_:genid67 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound> .
+_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> .
+_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid61 .
+_:genid61 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid63 <http://www.w3.org/2002/07/owl#complementOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid64 <http://www.w3.org/2002/07/owl#hasValue> "Continuous" .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> .
+_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid55 <http://www.w3.org/2002/07/owl#hasValue> "Continuous" .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid74 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessmentMethod> .
+_:genid74 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid75 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale> .
+_:genid75 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#description> .
+_:genid76 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad evaluable de una entidad de una cadena de suministros" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "Método que no necesita ninguna otra métrica para la asignación de valores a un atributo mensurable" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad de medida que no se deriva de otra unidad" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Benefit_Equity
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Benefit_Equity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Benefit_Equity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Benefit_Equity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Benefit_Equity> <http://www.w3.org/2000/01/rdf-schema#comment> "Grado de equidad en los beneficios que obtienen las organizaciones participantes de una cadena -monetarios o de otro tipo- con respecto a un parámetro que permite sentar una base para la comparación" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isScaleTypeOf> .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid79 .
+_:genid79 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid81 <http://www.w3.org/2002/07/owl#unionOf> _:genid84 .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid85 <http://www.w3.org/2002/07/owl#hasValue> "Discrete" .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid83 <http://www.w3.org/2002/07/owl#hasValue> "Linguistic" .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de escala cuyos valores se vinculan a una clasificación o categorización de una propiedad" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Complex_Derived_Unit
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Complex_Derived_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Complex_Derived_Unit> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid87 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> .
+_:genid87 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid87 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Complex_Derived_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Complex_Derived_Unit> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Complex_Derived_Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad de medida que se deriva del producto de dos o más unidades de medidas" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid88 .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPartMetric> .
+_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "Método que necesita de otras métricas para la asignación de valores a un atributo mensurable" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Contribution_Equity
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Contribution_Equity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Contribution_Equity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Contribution_Equity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid89 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid89 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Contribution_Equity> <http://www.w3.org/2000/01/rdf-schema#comment> "Grado de equidad en los aportes -monetarios o de otro tipo- con respecto a un parámetro que permite sentar una base para la comparación -que efectúan las organizaciones participantes de una cadena" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter> <http://www.w3.org/2000/01/rdf-schema#comment> "Parámetro que permite calificar los valores de un atributo mensurable" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad de medida que se deriva de otra/s unidad/es" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Direct_Assessment
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Direct_Assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Direct_Assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Direct_Assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> .
+_:genid91 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid92 .
+_:genid92 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid99 .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> .
+_:genid94 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> .
+_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Direct_Assessment> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad de medición en la cual no se usan medidas de atributos mensurables" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Indirect_Assessment
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Indirect_Assessment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Indirect_Assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Indirect_Assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> .
+_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Indirect_Assessment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> .
+_:genid101 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid102 .
+_:genid102 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> .
+_:genid104 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid105 .
+_:genid105 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid107 .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid107 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> .
+_:genid107 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Indirect_Assessment> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad de medición en la cual se usa una o más medidas de atributos mensurables" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid110 .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies> .
+_:genid110 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Information> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid111 <http://www.w3.org/2002/07/owl#unionOf> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid125 .
+_:genid125 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid137 <http://www.w3.org/2002/07/owl#complementOf> _:genid138 .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid138 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFBegin> .
+_:genid138 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid134 .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid134 <http://www.w3.org/2002/07/owl#complementOf> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid135 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFEnd> .
+_:genid135 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid126 .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid127 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies> .
+_:genid127 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid128 .
+_:genid128 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid130 .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid130 <http://www.w3.org/2002/07/owl#complementOf> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid131 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame> .
+_:genid131 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid113 .
+_:genid113 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid118 .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid119 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies> .
+_:genid119 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid120 .
+_:genid120 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid122 .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame> .
+_:genid122 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFBegin> .
+_:genid117 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid114 .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFEnd> .
+_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid139 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#hasResourceRole> .
+_:genid139 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid140 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint> .
+_:genid140 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid141 .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid141 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasMeasuredValue> .
+_:genid141 <http://www.w3.org/2002/07/owl#minCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> <http://www.w3.org/2000/01/rdf-schema#comment> "Resultado de una actividad de medición. Caracteriza a un atributo mensurable" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Creation> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Creation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid142 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> .
+_:genid142 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation> <http://www.w3.org/2000/01/rdf-schema#comment> "Generación de una medida durante una actividad de medición" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid143 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> .
+_:genid143 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid144 .
+_:genid144 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid144 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> .
+_:genid144 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input> <http://www.w3.org/2000/01/rdf-schema#comment> "Rol de una medida que es requerida para la ejecución de una actividad de medición indirecta" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Output> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid145 .
+_:genid145 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid145 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> .
+_:genid145 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid146 .
+_:genid146 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid146 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> .
+_:genid146 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output> <http://www.w3.org/2000/01/rdf-schema#comment> "Rol de una medida que se obtiene como resultado de una actividad de medición" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use> <http://www.w3.org/2000/01/rdf-schema#comment> "Empleo de una medida en una actividad de medición indirecta" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid147 .
+_:genid147 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid147 <http://www.w3.org/2002/07/owl#unionOf> _:genid149 .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric> .
+_:genid149 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid148 .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric> .
+_:genid148 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid150 .
+_:genid150 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid150 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf> .
+_:genid150 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Information> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid151 .
+_:genid151 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid151 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#definition> .
+_:genid151 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> <http://www.w3.org/2000/01/rdf-schema#comment> "Método utilizado para la obtención del valor de un atributo mensurable" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid152 .
+_:genid152 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid152 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> .
+_:genid152 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid153 .
+_:genid153 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid153 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> .
+_:genid153 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> <http://www.w3.org/2000/01/rdf-schema#comment> "Rol de una métrica que es requerida para la ejecución de una actividad de medición" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid154 .
+_:genid154 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid154 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> .
+_:genid154 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use> <http://www.w3.org/2000/01/rdf-schema#comment> "Empleo de una métrica en una actividad de medición" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid155 .
+_:genid155 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid155 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isScaleTypeOf> .
+_:genid155 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid156 .
+_:genid156 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid163 .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+_:genid163 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid157 .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid158 .
+_:genid158 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid158 <http://www.w3.org/2002/07/owl#unionOf> _:genid161 .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid162 .
+_:genid162 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid162 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid162 <http://www.w3.org/2002/07/owl#hasValue> "Continuos" .
+_:genid161 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid159 .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid160 .
+_:genid160 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid160 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid160 <http://www.w3.org/2002/07/owl#hasValue> "Discrete" .
+_:genid159 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid157 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid156 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de escala en la cual sus valores tienen un orden y cada par consecutivo representa un intervalo constante de una propiedad" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad evaluable de una entidad de una cadena de suministros que caracteriza su desempeño" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Information
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Information> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Information> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Information_Resource> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Information_Resource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Information> <http://www.w3.org/2000/01/rdf-schema#comment> "Recurso de información vinculado a la evaluación del desempeño de una entidad de una cadena de suministros" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Agility
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Agility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Agility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Agility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid164 .
+_:genid164 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid164 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid164 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Agility> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacidad de una cadena de suministros de adaptarse para responder a cambios en los requerimientos" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Assets
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Assets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Assets> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Assets> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid165 .
+_:genid165 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid165 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid165 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Assets> <http://www.w3.org/2000/01/rdf-schema#comment> "Efectividad de la gestión de los activos involucrados en la operación de una cadena de suministros" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Cost
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Cost> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Cost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Cost> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid166 .
+_:genid166 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid166 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid166 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Cost> <http://www.w3.org/2000/01/rdf-schema#comment> "Costos asociados a la operación de una cadena de suministros" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimensión de desempeño de una cadena de suministros que apunta a la satisfacción de los clientes finales" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimensión de desempeño de una cadena de suministros que se enfoca en el logro de un balance entre los aportes y los beneficios que obtienen las organizaciones participantes en la cadena" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing> <http://www.w3.org/2000/01/rdf-schema#comment> "a excepción de los clientes finales. Se trata de una medida de dispersión con la cual se pretende evaluar la variabilidad en la relación entre los conceptos de aportes y beneficios de los distintos actores" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimensión de desempeño de una cadena de suministros que se focaliza en los resultados de interés para el conjunto de participantes de la misma - con excepción de los clientes finales" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid167 .
+_:genid167 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid167 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid167 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid168 .
+_:genid168 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid168 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isShownThrough> .
+_:genid168 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad abstracta con la cual se puede caracterizar el desempeño de una cadena de suministros" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid169 .
+_:genid169 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid169 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceDimensionOf> .
+_:genid169 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid170 .
+_:genid170 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid170 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLinkedConcept> .
+_:genid170 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "Perspectiva desde la cual se analiza el desempeño de una cadena de suministros" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid171 .
+_:genid171 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid171 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceEvaulationSystemOf> .
+_:genid171 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid172 .
+_:genid172 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid172 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceDimension> .
+_:genid172 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "2"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid172 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de ideas" .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> <http://www.w3.org/2000/01/rdf-schema#comment> "reglas y principios que tienen como finalidad la determinación de valores de desempeño de una cadena de suministros" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Reliability
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Reliability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Reliability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Reliability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid173 .
+_:genid173 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid173 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid173 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Reliability> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacidad de una cadena de suministros de operar sin fallas" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Responsiveness
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Responsiveness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Responsiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Responsiveness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid174 .
+_:genid174 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid174 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf> .
+_:genid174 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Responsiveness> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacidad de reacción de una cadena de suministros para responder a los requerimientos estándar de los clientes" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> <http://www.w3.org/2000/01/rdf-schema#comment> "Naturaleza de las relaciones entre los valores pertenecientes a una escala" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute> <http://www.w3.org/2000/01/rdf-schema#comment> "Propiedad evaluable de una entidad de una cadena de suministros que no caracteriza su desempeño" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid175 .
+_:genid175 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid178 .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid179 .
+_:genid179 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid179 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> .
+_:genid179 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit> .
+_:genid178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid176 .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid177 .
+_:genid177 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid177 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom> .
+_:genid177 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid177 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit> .
+_:genid176 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid175 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid180 .
+_:genid180 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid180 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#dimensionalSize> .
+_:genid180 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "Unidad de medida que se deriva de una única unidad base. Puede obtenerse por la adición de un prefijo a la unidad base para formar un múltiplo o submúltiplo decimal de la misma y/o por la modificación de su exponente" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid181 .
+_:genid181 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid181 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf> .
+_:genid181 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid182 .
+_:genid182 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid182 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTargetvalue> .
+_:genid182 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid183 .
+_:genid183 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid183 <http://www.w3.org/2002/07/owl#unionOf> _:genid185 .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+_:genid185 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid184 .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid184 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value> <http://www.w3.org/2000/01/rdf-schema#comment> "Valor deseado de un atributo mensurable" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid186 .
+_:genid186 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid186 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isUnitOfMeasureOf> .
+_:genid186 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> <http://www.w3.org/2000/01/rdf-schema#comment> "Magnitud estándar que se usa como referencia para la unidad en una escala numérica" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid187 .
+_:genid187 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid187 <http://www.w3.org/2002/07/owl#unionOf> _:genid194 .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid195 .
+_:genid195 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid199 .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid200 .
+_:genid200 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid200 <http://www.w3.org/2002/07/owl#complementOf> _:genid201 .
+_:genid201 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid201 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue> .
+_:genid201 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid199 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid196 .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid197 .
+_:genid197 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid197 <http://www.w3.org/2002/07/owl#complementOf> _:genid198 .
+_:genid198 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid198 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#minValue> .
+_:genid198 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid196 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid195 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid194 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid188 .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid189 .
+_:genid189 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid192 .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid193 .
+_:genid193 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid193 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue> .
+_:genid193 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid192 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid190 .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid191 .
+_:genid191 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid191 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#minValue> .
+_:genid191 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+_:genid190 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid189 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid188 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid202 .
+_:genid202 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid202 <http://www.w3.org/2002/07/owl#unionOf> _:genid207 .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid208 .
+_:genid208 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid211 .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid212 .
+_:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid212 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> .
+_:genid212 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> .
+_:genid211 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid209 .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid210 .
+_:genid210 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid210 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid210 <http://www.w3.org/2002/07/owl#hasValue> "Continuous" .
+_:genid209 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid208 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid207 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid205 .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid206 .
+_:genid206 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid206 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid206 <http://www.w3.org/2002/07/owl#hasValue> "Discrete" .
+_:genid205 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid203 .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid204 .
+_:genid204 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid204 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid204 <http://www.w3.org/2002/07/owl#hasValue> "Linguistic" .
+_:genid203 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid213 .
+_:genid213 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid213 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType> .
+_:genid213 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid214 .
+_:genid214 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid214 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType> .
+_:genid214 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid215 .
+_:genid215 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid215 <http://www.w3.org/2002/07/owl#oneOf> _:genid218 .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Continuous" .
+_:genid218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid217 .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Discrete" .
+_:genid217 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid216 .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Linguistic" .
+_:genid216 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de posibles valores de una propiedad y las relaciones entre sí- las cuales se determinan por el tipo de escala asociado" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Creation
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Information_Resource
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de compradores reales y potenciales que son agrupados por  compartir ciertas características distintivas" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Output
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Task
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Absolute
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Absolute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Absolute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Absolute> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de escala que establece una distancia específica entre sus valores. Posee un punto cero absoluto - así como - un valor preestablecido y fijo para la unidad" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Interval
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Interval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Interval> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de escala que establece una distancia específica entre sus valores. La escala de intervalo carece de un punto cero absoluto. Es decir, el valor cero se establece por convención o conveniencia" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Nominal
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Nominal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Nominal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Nominal> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de escala cuyos valores constituyen clases o categorías separadas de una propiedad sin un orden entre ellas" .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ordinal
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ordinal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ordinal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ordinal> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de escala cuyos valores constituyen clases o categorías separadas y ordenadas de una propiedad"@es .
+# 
+# http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ratio
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ratio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ratio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical> .
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ratio> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de escala que establece una distancia específica entre sus valores y que posee un punto cero absoluto. En el punto cero la característica o atributo que se mide es nulo" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid219 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid219 <http://www.w3.org/2002/07/owl#members> _:genid232 .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid231 .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid230 .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept> .
+_:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid229 .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension> .
+_:genid229 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid228 .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System> .
+_:genid228 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid227 .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type> .
+_:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid226 .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure> .
+_:genid226 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid225 .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale> .
+_:genid225 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid224 .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market> .
+_:genid224 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid223 .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role> .
+_:genid223 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid222 .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity> .
+_:genid222 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid221 .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship> .
+_:genid221 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid220 .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization> .
+_:genid220 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid233 <http://www.w3.org/2002/07/owl#members> _:genid240 .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Benefit_Equity> .
+_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid239 .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Contribution_Equity> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid238 .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Agility> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid237 .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Assets> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid236 .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Cost> .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid235 .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Reliability> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid234 .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Responsiveness> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid241 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid241 <http://www.w3.org/2002/07/owl#members> _:genid244 .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing> .
+_:genid244 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid243 .
+_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing> .
+_:genid243 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid242 .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing> .
+_:genid242 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+_:genid245 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDifferent> .
+_:genid245 <http://www.w3.org/2002/07/owl#distinctMembers> _:genid250 .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Absolute> .
+_:genid250 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid249 .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Interval> .
+_:genid249 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid248 .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Nominal> .
+_:genid248 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid247 .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ordinal> .
+_:genid247 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid246 .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ratio> .
+_:genid246 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
