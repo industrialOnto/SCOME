@@ -1,0 +1,1248 @@
+@prefix : <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> .
+
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME> rdf:type owl:Ontology ;
+                                                              owl:imports <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO> ;
+                                                              <http://purl.org/dc/elements/1.1/contributor> "Gabriela P. Henning" ,
+                                                                                                            "Horacio P. Leone" ,
+                                                                                                            "Marcela Vegetti" ;
+                                                              <http://purl.org/dc/elements/1.1/creator> "Alicia C. Böhm" ;
+                                                              <http://purl.org/dc/elements/1.1/licence> "CreativeCommons V4.0 https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                              <http://purl.org/dc/elements/1.1/title> "SCOME" ;
+                                                              rdfs:comment "Supply Chain Ontology Mesurement" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/licence
+<http://purl.org/dc/elements/1.1/licence> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#areAllowedValuesOf
+:areAllowedValuesOf rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :hasAllowedValues ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :Allowed_Values ;
+                    rdfs:range :Assessable_Attribute .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#derivesFrom
+:derivesFrom rdf:type owl:ObjectProperty ,
+                      owl:AsymmetricProperty ;
+             rdfs:domain :Derived_Unit ;
+             rdfs:range :Unit_Of_Measure .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAllowedValues
+:hasAllowedValues rdf:type owl:ObjectProperty ,
+                           owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessableAttribute
+:hasAssessableAttribute rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :isAssessableAttributeOf .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasAssessmentMethod
+:hasAssessmentMethod rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isAssessmentMethodOf ;
+                     rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLinkedConcept
+:hasLinkedConcept rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isLinkedConceptOf ;
+                  rdfs:domain :SC_Performance_Dimension ;
+                  rdfs:range :SC_Performance_Concept .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPartMetric
+:hasPartMetric rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isPartOfMetric .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceDimension
+:hasPerformanceDimension rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :isPerformanceDimensionOf ;
+                         rdfs:domain :SC_Performance_Evaluation_System ;
+                         rdfs:range :SC_Performance_Dimension .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasPerformanceEvaulationSystem
+:hasPerformanceEvaulationSystem rdf:type owl:ObjectProperty ;
+                                owl:inverseOf :isPerformanceEvaulationSystemOf ;
+                                rdf:type owl:FunctionalProperty ,
+                                         owl:InverseFunctionalProperty ;
+                                rdfs:domain <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain> ;
+                                rdfs:range :SC_Performance_Evaluation_System .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasScaleType
+:hasScaleType rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isScaleTypeOf ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Value_Scale ;
+              rdfs:range :Scale_Type ;
+              rdfs:label "hasScaleType"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTarget
+:hasTarget rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isTargetValueOf ;
+           rdf:type owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUnitOfMeasure
+:hasUnitOfMeasure rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isUnitOfMeasureOf ;
+                  rdf:type owl:FunctionalProperty ;
+                  rdfs:domain :Value_Scale ;
+                  rdfs:range :Unit_Of_Measure .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasValueScale
+:hasValueScale rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Assessable_Attribute ;
+               rdfs:range :Value_Scale ;
+               rdfs:label "hasValueScale"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessableAttributeOf
+:isAssessableAttributeOf rdf:type owl:ObjectProperty ,
+                                  owl:FunctionalProperty ;
+                         rdfs:domain :Assessable_Attribute ;
+                         rdfs:range <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity> .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isAssessmentMethodOf
+:isAssessmentMethodOf rdf:type owl:ObjectProperty ,
+                               owl:FunctionalProperty ;
+                      rdfs:domain :Metric ;
+                      rdfs:range :Assessable_Attribute .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isLinkedConceptOf
+:isLinkedConceptOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPartOfMetric
+:isPartOfMetric rdf:type owl:ObjectProperty ;
+                rdfs:domain :Metric ;
+                rdfs:range :Composite_Metric .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceDimensionOf
+:isPerformanceDimensionOf rdf:type owl:ObjectProperty ,
+                                   owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isPerformanceEvaulationSystemOf
+:isPerformanceEvaulationSystemOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isQuantifiedBy
+:isQuantifiedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :quantifies ;
+                rdfs:domain :Assessable_Attribute ;
+                rdfs:range :Measure .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isScaleTypeOf
+:isScaleTypeOf rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isShownThrough
+:isShownThrough rdf:type owl:ObjectProperty ;
+                rdfs:domain :SC_Performance_Concept ;
+                rdfs:range :Performance_Attribute .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isTargetValueOf
+:isTargetValueOf rdf:type owl:ObjectProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Target_Value ;
+                 rdfs:range :Assessable_Attribute .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#isUnitOfMeasureOf
+:isUnitOfMeasureOf rdf:type owl:ObjectProperty ,
+                            owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#quantifies
+:quantifies rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#hasResourceRole
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#hasResourceRole> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> rdf:type owl:ObjectProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#definition
+:definition rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Metric ;
+            rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#dimensionalSize
+:dimensionalSize rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Simple_Derived_Unit ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "dimensionalSize"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasElementValue
+:hasElementValue rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Allowed_Values ;
+                 rdfs:range xsd:float ;
+                 rdfs:label "hasElementValue"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasLowerBound
+:hasLowerBound rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Allowed_Values ;
+               rdfs:range xsd:float ;
+               rdfs:label "hasLowerBound"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasMeasuredValue
+:hasMeasuredValue rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasNormalizedValue
+:hasNormalizedValue rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTargetvalue
+:hasTargetvalue rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Target_Value ;
+                rdfs:label "hasTargetValue"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasTimeFrame
+:hasTimeFrame rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Assessable_Attribute ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "hasTimeFrame"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#hasUpperBound
+:hasUpperBound rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Allowed_Values ;
+               rdfs:range xsd:float ;
+               rdfs:label "hasUpperBound"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#maxValue
+:maxValue rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Value_Scale ;
+          rdfs:label "maxValue"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#minValue
+:minValue rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Value_Scale .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#modifierPrefix
+:modifierPrefix rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Simple_Derived_Unit ;
+                rdfs:range rdfs:Literal .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#normalizationCriteria
+:normalizationCriteria rdf:type owl:DatatypeProperty ,
+                                owl:FunctionalProperty ;
+                       rdfs:label "normalizationCriteria"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFBegin
+:timeFBegin rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Measure .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timeFEnd
+:timeFEnd rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Measure .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#timepoint
+:timepoint rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Measure ;
+           rdfs:range xsd:dateTime ;
+           rdfs:label "timepoint"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#valueType
+:valueType rdf:type owl:DatatypeProperty ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:oneOf [ rdf:type rdf:List ;
+                                    rdf:first "Continuous" ;
+                                    rdf:rest [ rdf:type rdf:List ;
+                                               rdf:first "Discrete" ;
+                                               rdf:rest [ rdf:type rdf:List ;
+                                                          rdf:first "Linguistic" ;
+                                                          rdf:rest rdf:nil
+                                                        ]
+                                             ]
+                                  ]
+                      ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Allowed_Values
+:Allowed_Values rdf:type owl:Class ;
+                rdfs:subClassOf :Control_Parameter ,
+                                [ rdf:type owl:Class ;
+                                  owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :hasElementValue ;
+                                                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                 owl:unionOf ( rdfs:Literal
+                                                                                                                               xsd:float
+                                                                                                                             )
+                                                                                                               ]
+                                                                                          ]
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :hasLowerBound ;
+                                                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                              owl:unionOf ( rdfs:Literal
+                                                                                                            xsd:float
+                                                                                                          )
+                                                                                            ]
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :hasUpperBound ;
+                                                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                              owl:unionOf ( rdfs:Literal
+                                                                                                            xsd:float
+                                                                                                          )
+                                                                                            ]
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                                                [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :hasLowerBound ;
+                                                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                 owl:unionOf ( rdfs:Literal
+                                                                                                                               xsd:float
+                                                                                                                             )
+                                                                                                               ]
+                                                                                          ]
+                                                                       ]
+                                                                       [ rdf:type owl:Class ;
+                                                                         owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty :hasUpperBound ;
+                                                                                            owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                                                 owl:unionOf ( rdfs:Literal
+                                                                                                                               xsd:float
+                                                                                                                             )
+                                                                                                               ]
+                                                                                          ]
+                                                                       ]
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :hasElementValue ;
+                                                                         owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                                                              owl:unionOf ( rdfs:Literal
+                                                                                                            xsd:float
+                                                                                                          )
+                                                                                            ]
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                                              )
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :areAllowedValuesOf ;
+                                  owl:someValuesFrom :Assessable_Attribute
+                                ] ;
+                owl:disjointWith :Target_Value ;
+                rdfs:comment "Conjunto de valores aceptables para un determinado atributo mensurable" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assesment_Activity
+:Assesment_Activity rdf:type owl:Class ;
+                    owl:equivalentClass [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> ;
+                                          owl:someValuesFrom :Measure_Creation
+                                        ] ;
+                    rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Task> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> ;
+                                      owl:someValuesFrom :Metric_Use
+                                    ] ;
+                    rdfs:comment """Actividad mediante la cual se valora un atributo mensurable
+asignándole un valor (“measure”) de acuerdo al
+procedimiento especificado por una métrica""" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Assessable_Attribute
+:Assessable_Attribute rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Class ;
+                                            owl:unionOf ( :Performance_Attribute
+                                                          :Secondary_Attribute
+                                                        )
+                                          ] ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :isAssessableAttributeOf ;
+                                            owl:someValuesFrom <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity>
+                                          ] ;
+                      rdfs:subClassOf [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                               owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :hasAllowedValues ;
+                                                                               owl:someValuesFrom [ owl:intersectionOf ( :Allowed_Values
+                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :hasLowerBound ;
+                                                                                                                           owl:someValuesFrom xsd:float
+                                                                                                                         ]
+                                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                                           owl:onProperty :hasUpperBound ;
+                                                                                                                           owl:someValuesFrom xsd:float
+                                                                                                                         ]
+                                                                                                                       ) ;
+                                                                                                    rdf:type owl:Class
+                                                                                                  ]
+                                                                             ]
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty :hasValueScale ;
+                                                                               owl:someValuesFrom [ owl:intersectionOf ( :Value_Scale
+                                                                                                                         [ rdf:type owl:Class ;
+                                                                                                                           owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                                              owl:onProperty :valueType ;
+                                                                                                                                              owl:hasValue "Continuous"
+                                                                                                                                            ]
+                                                                                                                         ]
+                                                                                                                       ) ;
+                                                                                                    rdf:type owl:Class
+                                                                                                  ]
+                                                                             ]
+                                                                           )
+                                                             ]
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :hasValueScale ;
+                                                               owl:someValuesFrom [ owl:intersectionOf ( :Value_Scale
+                                                                                                         [ rdf:type owl:Restriction ;
+                                                                                                           owl:onProperty :valueType ;
+                                                                                                           owl:hasValue "Continuous"
+                                                                                                         ]
+                                                                                                       ) ;
+                                                                                    rdf:type owl:Class
+                                                                                  ]
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasAssessmentMethod ;
+                                        owl:someValuesFrom :Metric
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasValueScale ;
+                                        owl:someValuesFrom :Value_Scale
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :description ;
+                                        owl:someValuesFrom rdfs:Literal
+                                      ] ;
+                      rdfs:comment "Propiedad evaluable de una entidad de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Atomic_Metric
+:Atomic_Metric rdf:type owl:Class ;
+               rdfs:subClassOf :Metric ;
+               owl:disjointWith :Composite_Metric ;
+               rdfs:comment "Método que no necesita ninguna otra métrica para la asignación de valores a un atributo mensurable" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Base_Unit
+:Base_Unit rdf:type owl:Class ;
+           rdfs:subClassOf :Unit_Of_Measure ;
+           owl:disjointWith :Derived_Unit ;
+           rdfs:comment "Unidad de medida que no se deriva de otra unidad" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Benefit_Equity
+:Benefit_Equity rdf:type owl:Class ;
+                rdfs:subClassOf :SC_Performance_Concept ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isLinkedConceptOf ;
+                                  owl:someValuesFrom :SC_Equity_Facing
+                                ] ;
+                rdfs:comment "Grado de equidad en los beneficios que obtienen las organizaciones participantes de una cadena -monetarios o de otro tipo- con respecto a un parámetro que permite sentar una base para la comparación" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Categorical
+:Categorical rdf:type owl:Class ;
+             rdfs:subClassOf :Scale_Type ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :isScaleTypeOf ;
+                               owl:someValuesFrom [ owl:intersectionOf ( :Value_Scale
+                                                                         [ rdf:type owl:Class ;
+                                                                           owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty :valueType ;
+                                                                                           owl:hasValue "Discrete"
+                                                                                         ]
+                                                                                         [ rdf:type owl:Restriction ;
+                                                                                           owl:onProperty :valueType ;
+                                                                                           owl:hasValue "Linguistic"
+                                                                                         ]
+                                                                                       )
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ]
+                             ] ;
+             owl:disjointWith :Numerical ;
+             rdfs:comment "Tipo de escala cuyos valores se vinculan a una clasificación o categorización de una propiedad" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Complex_Derived_Unit
+:Complex_Derived_Unit rdf:type owl:Class ;
+                      owl:equivalentClass [ rdf:type owl:Restriction ;
+                                            owl:onProperty :derivesFrom ;
+                                            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                            owl:onClass :Unit_Of_Measure
+                                          ] ;
+                      rdfs:subClassOf :Derived_Unit ;
+                      owl:disjointWith :Simple_Derived_Unit ;
+                      rdfs:comment "Unidad de medida que se deriva del producto de dos o más unidades de medidas" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Composite_Metric
+:Composite_Metric rdf:type owl:Class ;
+                  owl:equivalentClass [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasPartMetric ;
+                                        owl:someValuesFrom :Metric
+                                      ] ;
+                  rdfs:subClassOf :Metric ;
+                  rdfs:comment "Método que necesita de otras métricas para la asignación de valores a un atributo mensurable" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Contribution_Equity
+:Contribution_Equity rdf:type owl:Class ;
+                     rdfs:subClassOf :SC_Performance_Concept ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isLinkedConceptOf ;
+                                       owl:someValuesFrom :SC_Equity_Facing
+                                     ] ;
+                     rdfs:comment "Grado de equidad en los aportes -monetarios o de otro tipo- con respecto a un parámetro que permite sentar una base para la comparación -que efectúan las organizaciones participantes de una cadena" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Control_Parameter
+:Control_Parameter rdf:type owl:Class ;
+                   rdfs:comment "Parámetro que permite calificar los valores de un atributo mensurable" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Derived_Unit
+:Derived_Unit rdf:type owl:Class ;
+              owl:equivalentClass [ rdf:type owl:Restriction ;
+                                    owl:onProperty :derivesFrom ;
+                                    owl:someValuesFrom :Unit_Of_Measure
+                                  ] ;
+              rdfs:subClassOf :Unit_Of_Measure ;
+              rdfs:comment "Unidad de medida que se deriva de otra/s unidad/es" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Direct_Assessment
+:Direct_Assessment rdf:type owl:Class ;
+                   rdfs:subClassOf :Assesment_Activity ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> ;
+                                     owl:someValuesFrom [ owl:intersectionOf ( :Metric_Use
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> ;
+                                                                                 owl:someValuesFrom [ owl:intersectionOf ( :Metric_Input
+                                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                                             owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> ;
+                                                                                                                             owl:someValuesFrom :Atomic_Metric
+                                                                                                                           ]
+                                                                                                                         ) ;
+                                                                                                      rdf:type owl:Class
+                                                                                                    ]
+                                                                               ]
+                                                                             ) ;
+                                                          rdf:type owl:Class
+                                                        ]
+                                   ] ;
+                   rdfs:comment "Actividad de medición en la cual no se usan medidas de atributos mensurables" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Indirect_Assessment
+:Indirect_Assessment rdf:type owl:Class ;
+                     rdfs:subClassOf :Assesment_Activity ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> ;
+                                       owl:someValuesFrom :Measure_Use
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#entails> ;
+                                       owl:someValuesFrom [ owl:intersectionOf ( :Metric_Use
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( :Metric_Input
+                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                               owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> ;
+                                                                                                                               owl:someValuesFrom :Composite_Metric
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                     ] ;
+                     rdfs:comment "Actividad de medición en la cual se usa una o más medidas de atributos mensurables" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure
+:Measure rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :quantifies ;
+                               owl:someValuesFrom :Assessable_Attribute
+                             ] ;
+         rdfs:subClassOf :Performance_Information ,
+                         [ rdf:type owl:Class ;
+                           owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                  owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :timeFBegin ;
+                                                                                     owl:someValuesFrom xsd:dateTime
+                                                                                   ]
+                                                                ]
+                                                                [ rdf:type owl:Class ;
+                                                                  owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                     owl:onProperty :timeFEnd ;
+                                                                                     owl:someValuesFrom xsd:dateTime
+                                                                                   ]
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :quantifies ;
+                                                                  owl:someValuesFrom [ owl:intersectionOf ( :Assessable_Attribute
+                                                                                                            [ rdf:type owl:Class ;
+                                                                                                              owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                                                                 owl:onProperty :hasTimeFrame ;
+                                                                                                                                 owl:someValuesFrom xsd:dateTime
+                                                                                                                               ]
+                                                                                                            ]
+                                                                                                          ) ;
+                                                                                       rdf:type owl:Class
+                                                                                     ]
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ]
+                                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :quantifies ;
+                                                                  owl:someValuesFrom [ owl:intersectionOf ( :Assessable_Attribute
+                                                                                                            [ rdf:type owl:Restriction ;
+                                                                                                              owl:onProperty :hasTimeFrame ;
+                                                                                                              owl:someValuesFrom xsd:dateTime
+                                                                                                            ]
+                                                                                                          ) ;
+                                                                                       rdf:type owl:Class
+                                                                                     ]
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :timeFBegin ;
+                                                                  owl:someValuesFrom xsd:dateTime
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :timeFEnd ;
+                                                                  owl:someValuesFrom xsd:dateTime
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ]
+                                       )
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#hasResourceRole> ;
+                           owl:someValuesFrom :Measure_Output
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :timepoint ;
+                           owl:someValuesFrom xsd:dateTime
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasMeasuredValue ;
+                           owl:minCardinality "1"^^xsd:nonNegativeInteger
+                         ] ;
+         owl:disjointWith :Metric ;
+         rdfs:comment "Resultado de una actividad de medición. Caracteriza a un atributo mensurable" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Creation
+:Measure_Creation rdf:type owl:Class ;
+                  rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Creation> ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> ;
+                                    owl:someValuesFrom :Measure_Output
+                                  ] ;
+                  rdfs:comment "Generación de una medida durante una actividad de medición" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Input
+:Measure_Input rdf:type owl:Class ;
+               rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input> ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> ;
+                                 owl:someValuesFrom :Measure_Use
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> ;
+                                 owl:someValuesFrom :Measure
+                               ] ;
+               owl:disjointWith :Metric_Input ;
+               rdfs:comment "Rol de una medida que es requerida para la ejecución de una actividad de medición indirecta" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Output
+:Measure_Output rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Output> ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> ;
+                                  owl:someValuesFrom :Measure_Creation
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> ;
+                                  owl:someValuesFrom :Measure
+                                ] ;
+                rdfs:comment "Rol de una medida que se obtiene como resultado de una actividad de medición" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Measure_Use
+:Measure_Use rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use> ;
+             owl:disjointWith :Metric_Use ;
+             rdfs:comment "Empleo de una medida en una actividad de medición indirecta" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric
+:Metric rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Class ;
+                              owl:unionOf ( :Atomic_Metric
+                                            :Composite_Metric
+                                          )
+                            ] ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isAssessmentMethodOf ;
+                              owl:someValuesFrom :Assessable_Attribute
+                            ] ;
+        rdfs:subClassOf :Performance_Information ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :definition ;
+                          owl:someValuesFrom rdfs:Literal
+                        ] ;
+        rdfs:comment "Método utilizado para la obtención del valor de un atributo mensurable" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Input
+:Metric_Input rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input> ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isInvolvedIn> ;
+                                owl:someValuesFrom :Metric_Use
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#isResourceRoleOf> ;
+                                owl:someValuesFrom :Metric
+                              ] ;
+              rdfs:comment "Rol de una métrica que es requerida para la ejecución de una actividad de medición" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Metric_Use
+:Metric_Use rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use> ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#involves> ;
+                              owl:someValuesFrom :Metric_Input
+                            ] ;
+            rdfs:comment "Empleo de una métrica en una actividad de medición" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Numerical
+:Numerical rdf:type owl:Class ;
+           rdfs:subClassOf :Scale_Type ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isScaleTypeOf ;
+                             owl:someValuesFrom [ owl:intersectionOf ( :Value_Scale
+                                                                       [ rdf:type owl:Class ;
+                                                                         owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty :valueType ;
+                                                                                         owl:hasValue "Continuos"
+                                                                                       ]
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty :valueType ;
+                                                                                         owl:hasValue "Discrete"
+                                                                                       ]
+                                                                                     )
+                                                                       ]
+                                                                     ) ;
+                                                  rdf:type owl:Class
+                                                ]
+                           ] ;
+           rdfs:comment "Tipo de escala en la cual sus valores tienen un orden y cada par consecutivo representa un intervalo constante de una propiedad" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Attribute
+:Performance_Attribute rdf:type owl:Class ;
+                       rdfs:subClassOf :Assessable_Attribute ;
+                       owl:disjointWith :Secondary_Attribute ;
+                       rdfs:comment "Propiedad evaluable de una entidad de una cadena de suministros que caracteriza su desempeño" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Performance_Information
+:Performance_Information rdf:type owl:Class ;
+                         rdfs:subClassOf <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Information_Resource> ;
+                         rdfs:comment "Recurso de información vinculado a la evaluación del desempeño de una entidad de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Agility
+:SC_Agility rdf:type owl:Class ;
+            rdfs:subClassOf :SC_Performance_Concept ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :isLinkedConceptOf ;
+                              owl:someValuesFrom :SC_Customer_Facing
+                            ] ;
+            rdfs:comment "Capacidad de una cadena de suministros de adaptarse para responder a cambios en los requerimientos" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Assets
+:SC_Assets rdf:type owl:Class ;
+           rdfs:subClassOf :SC_Performance_Concept ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isLinkedConceptOf ;
+                             owl:someValuesFrom :SC_Internal_Facing
+                           ] ;
+           rdfs:comment "Efectividad de la gestión de los activos involucrados en la operación de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Cost
+:SC_Cost rdf:type owl:Class ;
+         rdfs:subClassOf :SC_Performance_Concept ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :isLinkedConceptOf ;
+                           owl:someValuesFrom :SC_Internal_Facing
+                         ] ;
+         rdfs:comment "Costos asociados a la operación de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Customer_Facing
+:SC_Customer_Facing rdf:type owl:Class ;
+                    rdfs:subClassOf :SC_Performance_Dimension ;
+                    rdfs:comment "Dimensión de desempeño de una cadena de suministros que apunta a la satisfacción de los clientes finales" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Equity_Facing
+:SC_Equity_Facing rdf:type owl:Class ;
+                  rdfs:subClassOf :SC_Performance_Dimension ;
+                  rdfs:comment "Dimensión de desempeño de una cadena de suministros que se enfoca en el logro de un balance entre los aportes y los beneficios que obtienen las organizaciones participantes en la cadena" ,
+                               "a excepción de los clientes finales. Se trata de una medida de dispersión con la cual se pretende evaluar la variabilidad en la relación entre los conceptos de aportes y beneficios de los distintos actores" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Internal_Facing
+:SC_Internal_Facing rdf:type owl:Class ;
+                    rdfs:subClassOf :SC_Performance_Dimension ;
+                    rdfs:comment "Dimensión de desempeño de una cadena de suministros que se focaliza en los resultados de interés para el conjunto de participantes de la misma - con excepción de los clientes finales" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Concept
+:SC_Performance_Concept rdf:type owl:Class ;
+                        owl:equivalentClass [ rdf:type owl:Restriction ;
+                                              owl:onProperty :isLinkedConceptOf ;
+                                              owl:someValuesFrom :SC_Performance_Dimension
+                                            ] ;
+                        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                          owl:onProperty :isShownThrough ;
+                                          owl:someValuesFrom :Performance_Attribute
+                                        ] ;
+                        rdfs:comment "Propiedad abstracta con la cual se puede caracterizar el desempeño de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Dimension
+:SC_Performance_Dimension rdf:type owl:Class ;
+                          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                                owl:onProperty :isPerformanceDimensionOf ;
+                                                owl:someValuesFrom :SC_Performance_Evaluation_System
+                                              ] ;
+                          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                            owl:onProperty :hasLinkedConcept ;
+                                            owl:someValuesFrom :SC_Performance_Concept
+                                          ] ;
+                          rdfs:comment "Perspectiva desde la cual se analiza el desempeño de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Performance_Evaluation_System
+:SC_Performance_Evaluation_System rdf:type owl:Class ;
+                                  rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :isPerformanceEvaulationSystemOf ;
+                                                    owl:someValuesFrom <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain>
+                                                  ] ,
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty :hasPerformanceDimension ;
+                                                    owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                    owl:onClass :SC_Performance_Dimension
+                                                  ] ;
+                                  rdfs:comment "Conjunto de ideas" ,
+                                               "reglas y principios que tienen como finalidad la determinación de valores de desempeño de una cadena de suministros" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Reliability
+:SC_Reliability rdf:type owl:Class ;
+                rdfs:subClassOf :SC_Performance_Concept ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :isLinkedConceptOf ;
+                                  owl:someValuesFrom :SC_Customer_Facing
+                                ] ;
+                rdfs:comment "Capacidad de una cadena de suministros de operar sin fallas" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#SC_Responsiveness
+:SC_Responsiveness rdf:type owl:Class ;
+                   rdfs:subClassOf :SC_Performance_Concept ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :isLinkedConceptOf ;
+                                     owl:someValuesFrom :SC_Customer_Facing
+                                   ] ;
+                   rdfs:comment "Capacidad de reacción de una cadena de suministros para responder a los requerimientos estándar de los clientes" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Scale_Type
+:Scale_Type rdf:type owl:Class ;
+            rdfs:comment "Naturaleza de las relaciones entre los valores pertenecientes a una escala" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Secondary_Attribute
+:Secondary_Attribute rdf:type owl:Class ;
+                     rdfs:subClassOf :Assessable_Attribute ;
+                     rdfs:comment "Propiedad evaluable de una entidad de una cadena de suministros que no caracteriza su desempeño" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Simple_Derived_Unit
+:Simple_Derived_Unit rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :derivesFrom ;
+                                                                  owl:allValuesFrom :Base_Unit
+                                                                ]
+                                                                [ rdf:type owl:Restriction ;
+                                                                  owl:onProperty :derivesFrom ;
+                                                                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                  owl:onClass :Base_Unit
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :Derived_Unit ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :dimensionalSize ;
+                                       owl:someValuesFrom xsd:float
+                                     ] ;
+                     rdfs:comment "Unidad de medida que se deriva de una única unidad base. Puede obtenerse por la adición de un prefijo a la unidad base para formar un múltiplo o submúltiplo decimal de la misma y/o por la modificación de su exponente" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Target_Value
+:Target_Value rdf:type owl:Class ;
+              rdfs:subClassOf :Control_Parameter ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :isTargetValueOf ;
+                                owl:someValuesFrom :Assessable_Attribute
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :hasTargetvalue ;
+                                owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                     owl:unionOf ( rdfs:Literal
+                                                                   xsd:float
+                                                                 )
+                                                   ]
+                              ] ;
+              rdfs:comment "Valor deseado de un atributo mensurable" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Unit_Of_Measure
+:Unit_Of_Measure rdf:type owl:Class ;
+                 owl:equivalentClass [ rdf:type owl:Restriction ;
+                                       owl:onProperty :isUnitOfMeasureOf ;
+                                       owl:someValuesFrom :Value_Scale
+                                     ] ;
+                 rdfs:comment "Magnitud estándar que se usa como referencia para la unidad en una escala numérica" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Value_Scale
+:Value_Scale rdf:type owl:Class ;
+             rdfs:subClassOf [ rdf:type owl:Class ;
+                               owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Class ;
+                                                                      owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty :maxValue ;
+                                                                                         owl:someValuesFrom xsd:float
+                                                                                       ]
+                                                                    ]
+                                                                    [ rdf:type owl:Class ;
+                                                                      owl:complementOf [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty :minValue ;
+                                                                                         owl:someValuesFrom xsd:float
+                                                                                       ]
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ]
+                                             [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :maxValue ;
+                                                                      owl:someValuesFrom xsd:float
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :minValue ;
+                                                                      owl:someValuesFrom xsd:float
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ]
+                                           )
+                             ] ,
+                             [ rdf:type owl:Class ;
+                               owl:unionOf ( [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :hasScaleType ;
+                                                                      owl:someValuesFrom :Numerical
+                                                                    ]
+                                                                    [ rdf:type owl:Restriction ;
+                                                                      owl:onProperty :valueType ;
+                                                                      owl:hasValue "Continuous"
+                                                                    ]
+                                                                  ) ;
+                                               rdf:type owl:Class
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :valueType ;
+                                               owl:hasValue "Discrete"
+                                             ]
+                                             [ rdf:type owl:Restriction ;
+                                               owl:onProperty :valueType ;
+                                               owl:hasValue "Linguistic"
+                                             ]
+                                           )
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :hasScaleType ;
+                               owl:someValuesFrom :Scale_Type
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :valueType ;
+                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                    owl:oneOf [ rdf:type rdf:List ;
+                                                                rdf:first "Continuous" ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "Discrete" ;
+                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                      rdf:first "Linguistic" ;
+                                                                                      rdf:rest rdf:nil
+                                                                                    ]
+                                                                         ]
+                                                              ]
+                                                  ]
+                             ] ;
+             rdfs:comment "Conjunto de posibles valores de una propiedad y las relaciones entre sí- las cuales se determinan por el tipo de escala asociado" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Creation
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Creation> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Information_Resource
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Information_Resource> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Input> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market> rdf:type owl:Class ;
+                                                                     rdfs:comment "Conjunto de compradores reales y potenciales que son agrupados por  compartir ciertas características distintivas" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Output
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Output> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Supply_Chain> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Task
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Task> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Use> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization
+<http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Absolute
+:Absolute rdf:type owl:NamedIndividual ,
+                   :Numerical ;
+          rdfs:comment "Tipo de escala que establece una distancia específica entre sus valores. Posee un punto cero absoluto - así como - un valor preestablecido y fijo para la unidad" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Interval
+:Interval rdf:type owl:NamedIndividual ,
+                   :Numerical ;
+          rdfs:comment "Tipo de escala que establece una distancia específica entre sus valores. La escala de intervalo carece de un punto cero absoluto. Es decir, el valor cero se establece por convención o conveniencia" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Nominal
+:Nominal rdf:type owl:NamedIndividual ,
+                  :Categorical ;
+         rdfs:comment "Tipo de escala cuyos valores constituyen clases o categorías separadas de una propiedad sin un orden entre ellas" .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ordinal
+:Ordinal rdf:type owl:NamedIndividual ,
+                  :Categorical ;
+         rdfs:comment "Tipo de escala cuyos valores constituyen clases o categorías separadas y ordenadas de una propiedad"@es .
+
+
+###  http://www.semanticweb.org/indonto/ontologies/2014/0/SCOME#Ratio
+:Ratio rdf:type owl:NamedIndividual ,
+                :Numerical ;
+       rdfs:comment "Tipo de escala que establece una distancia específica entre sus valores y que posee un punto cero absoluto. En el punto cero la característica o atributo que se mide es nulo" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Assessable_Attribute
+                :Control_Parameter
+                :SC_Performance_Concept
+                :SC_Performance_Dimension
+                :SC_Performance_Evaluation_System
+                :Scale_Type
+                :Unit_Of_Measure
+                :Value_Scale
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Market>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Resource_Role>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#SC_Entity>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Temporal_Relationship>
+                <http://www.semanticweb.org/indonto/ontologies/2014/0/SCOPRO#Utilization>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Benefit_Equity
+                :Contribution_Equity
+                :SC_Agility
+                :SC_Assets
+                :SC_Cost
+                :SC_Reliability
+                :SC_Responsiveness
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :SC_Customer_Facing
+                :SC_Equity_Facing
+                :SC_Internal_Facing
+              )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( :Absolute
+                        :Interval
+                        :Nominal
+                        :Ordinal
+                        :Ratio
+                      )
+] .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
